@@ -31,8 +31,8 @@
 
 - [ ] Get 90+ scores on Lighthouse
 
-- [ ] OPTIONAL: Get a custom domain name and use it for your application
+- [x] OPTIONAL: Get a custom domain name and use it for your application
 
-- [ ] OPTIONAL: Set up a CI/CD workflow to automatically deploy your application when the master branch in the repository changes
+- [x] OPTIONAL: Set up a CI/CD workflow to automatically deploy your application when the master branch in the repository changes
 
-- [ ] OPTIONAL: Make your application a progressive web app
+- [x] OPTIONAL: Make your application a progressive web app
