@@ -57,5 +57,14 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/index.tsx",
+      "<rootDir>/src/reportWebVitals.ts",
+      "<rootDir>/src/service-worker.ts",
+      "<rootDir>/src/serviceWorkerRegistration.ts"
+    ]
   }
 }

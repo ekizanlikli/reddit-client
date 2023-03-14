@@ -1,0 +1,5 @@
+ignore:
+  - "src/index.tsx"
+  - "src/reportWebVitals.ts"
+  - "src/service-worker.ts"
+  - "src/serviceWorkerRegistration.ts"
