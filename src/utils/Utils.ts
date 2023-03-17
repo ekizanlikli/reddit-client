@@ -20,7 +20,7 @@ export class Utils {
     }
 
     static getDateTimeStringFromDate(date: Date): String {
-        return `${this._getDateString(date)} ${this._getTimeString(date)}`;
+        return `${Utils._getDateString(date)} ${Utils._getTimeString(date)}`;
     }
 
 }
