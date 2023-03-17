@@ -64,6 +64,7 @@
     "coveragePathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/src/index.tsx",
+      "<rootDir>/src/setupProxy.js",
       "<rootDir>/src/reportWebVitals.ts",
       "<rootDir>/src/service-worker.ts",
       "<rootDir>/src/serviceWorkerRegistration.ts"

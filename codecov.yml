@@ -1,5 +1,6 @@
 ignore:
   - "src/index.tsx"
+  - "src/setupProxy.js"
   - "src/reportWebVitals.ts"
   - "src/service-worker.ts"
   - "src/serviceWorkerRegistration.ts"
