@@ -1,10 +1,38 @@
 import { BaseService } from "../../services/BaseService";
+import axios, { AxiosHeaders, AxiosResponse } from "axios";
 
-test("dummy test", () => {    
-    // let b1 = new BaseService();
-    // return b1.getTopTrendings().then((response) => {
-    //     expect(response.status).toBe(200);
-    //     expect((response.data.data.children as any[]).length).toBe(25);
-    // });
-    expect(true).toBe(true);
+// jest.mock("axios");
+// const axiosMocked = axios as jest.Mocked<typeof axios>;
+
+test("dummy test", () => {
+    const b1 = new BaseService();
+    const mockResponse: AxiosResponse = {
+        status: 200,
+        data: '{ \
+            "data": [{ \
+                "name": "Ahmet" \
+            }] \
+        }',
+        statusText: 'Ok',
+        headers: {},
+        config: {
+            headers: new AxiosHeaders()
+        },
+    }
+
+    const mockResponseJSON: AxiosResponse = {
+        status: 200,
+        data: { 
+            data: [{ 
+                name: 'Ahmet' 
+            }] 
+        },
+        statusText: 'Ok',
+        headers: {},
+        config: {
+            headers: new AxiosHeaders()
+        },
+    }
+    
+    expect(b1.__responseInterceptor(mockResponse)).toStrictEqual(mockResponseJSON);
 });

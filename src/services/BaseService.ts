@@ -8,10 +8,12 @@ export class BaseService {
             baseURL: `${process.env.REACT_APP_API_SITE}`,
         });
 
-        this._http.interceptors.response.use((response) => {
-            response.data = JSON.parse(response.data);
-            return response;
-        });
+        this._http.interceptors.response.use(this.__responseInterceptor);
+    }
+
+    __responseInterceptor = (response: AxiosResponse) => {
+        response.data = JSON.parse(response.data);
+        return response;
     }
 
     getTopTrendings(): Promise<AxiosResponse> {
