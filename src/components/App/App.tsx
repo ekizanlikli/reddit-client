@@ -7,11 +7,11 @@ import './App.css';
 const b1: BaseService = new BaseService();
 function App() {
   
-  useEffect(() => {
-    b1.getTopTrendings().then((response) => {
-      console.log(response);
-    });
-  }, []);
+  // useEffect(() => {
+  //   b1.getTopTrendings().then((response) => {
+  //     console.log(response);
+  //   });
+  // }, []);
 
   return (
     <div className="App">
