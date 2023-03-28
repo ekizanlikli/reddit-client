@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { BaseService } from '../../services/BaseService';
+import React from 'react';
 import logo from '../../statics/imgs/logo.svg';
 import './App.css';
 

@@ -2,19 +2,18 @@ import { AxiosHeaders, AxiosResponse } from 'axios';
 import { Axios } from 'axios';
 import { BaseService } from "../../services/BaseService";
 
-const b1 = new BaseService();
+const baseServiceInstance = new BaseService();
 
-// jest.mock('axios', () => {});
-const mockedAxios = b1.__clientInstance as jest.Mocked<Axios>;
+const mockedAxios = baseServiceInstance.__clientInstance as jest.Mocked<Axios>;
 
 test("dummy test", () => {
     const mockResponse: AxiosResponse = {
         status: 200,
-        data: '{ \
-            "data": [{ \
-                "name": "Ahmet" \
-            }] \
-        }',
+        data: `{ 
+            "data": [{ 
+                "name": "Ahmet" 
+            }] 
+        }`,
         statusText: 'Ok',
         headers: {},
         config: {
@@ -38,9 +37,9 @@ test("dummy test", () => {
 
     jest.spyOn(mockedAxios, 'get').mockResolvedValue(mockResponse);
 
-    expect(b1.__responseInterceptor(mockResponse)).toStrictEqual(mockResponseJSON);
+    expect(baseServiceInstance.__responseInterceptor(mockResponse)).toStrictEqual(mockResponseJSON);
 
-    return b1.getTopTrendings().then((response) => {
+    return baseServiceInstance.getTopTrendings().then((response) => {
         expect(true).toBe(true);
     });
 });
