@@ -5,6 +5,7 @@ import './App.css';
 
 
 const b1: BaseService = new BaseService();
+const b2: BaseService = new BaseService();
 function App() {
   
   // useEffect(() => {
