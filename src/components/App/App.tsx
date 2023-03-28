@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
-import { BaseService } from '../../services/BaseService';
+import React from 'react';
 import logo from '../../statics/imgs/logo.svg';
 import './App.css';
 
 
-const b1: BaseService = new BaseService();
 function App() {
-  
-  // useEffect(() => {
-  //   b1.getTopTrendings().then((response) => {
-  //     console.log(response);
-  //   });
-  // }, []);
 
   return (
     <div className="App">
