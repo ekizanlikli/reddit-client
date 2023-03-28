@@ -7,4 +7,4 @@ test("getDateTimeStringFromDate aformat check", () => {
     let timezone: any = -1 * (testDate.getTimezoneOffset() / 60);
     timezone = timezone > 0 ? '+' + timezone : timezone;
     expect(Utils.getDateTimeStringFromDate(testDate)).toBe(`2023/03/14 22:54:05 (UTC${timezone})`);
-})
+});
