@@ -1,5 +1,6 @@
 # Reddit Client
 ![CI/CD](https://github.com/ekizanlikli/reddit-client/workflows/Node.js%20CI/badge.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/ekizanlikli/reddit-client/badge)](https://www.codefactor.io/repository/github/ekizanlikli/reddit-client)
 [![codecov](https://codecov.io/gh/ekizanlikli/reddit-client/branch/main/graph/badge.svg)](https://codecov.io/gh/ekizanlikli/reddit-client)
 ![License](https://img.shields.io/github/license/ekizanlikli/reddit-client)
 
